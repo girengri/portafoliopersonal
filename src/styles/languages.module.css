@@ -1,0 +1,22 @@
+.languages__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    color: var(--white);
+}
+
+.languages__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.languages__icon {
+    font-size: 8rem;
+    background-color: var(--buttoms-color);
+    color: var(--tecnology-color);
+    border-radius: 20px;
+    padding: 20px;
+}

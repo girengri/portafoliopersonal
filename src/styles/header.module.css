@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .nav {} */
+
+.header__logo {
+    font-weight: 400;
+    color: var(--white);
+}
+
+.nav__link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav__link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .nav{
+        display: none;
+    }
+
+    .header__logo{
+        text-align: left;
+    }
+}

@@ -1,0 +1,7 @@
+.projects__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding-bottom: 1rem;
+}

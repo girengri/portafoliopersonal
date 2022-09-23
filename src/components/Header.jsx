@@ -2,7 +2,7 @@ import styles from "../styles/header.module.css";
 
 export const Header = () => {
     return (
-        <header className={`${styles.header} container`} id="acerca">
+        <header className={`${styles.header} container`}>
             <figure>
                 <h1 className={styles.header__logo}>Giovany Rendon</h1>
             </figure>

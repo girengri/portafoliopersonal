@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 2fr);
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .cardProject__container {

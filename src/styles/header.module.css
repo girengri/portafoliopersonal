@@ -4,8 +4,6 @@
     align-items: center;
 }
 
-/* .nav {} */
-
 .header__logo {
     font-weight: 400;
     color: var(--white);
@@ -23,11 +21,11 @@
 }
 
 @media (max-width: 500px) {
-    .nav{
-        display: none;
+    .header {
+        flex-direction: column;
     }
 
-    .header__logo{
-        text-align: left;
+    .header__logo {
+        text-align: center;
     }
 }

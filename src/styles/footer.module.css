@@ -1,0 +1,143 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foooter__contact__text {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.foooter__contact__email {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--tecnology-color);
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 30px;
+}
+
+.foooter__form__input {
+  padding: 18px 10px;
+  font-family: var(--font-family);
+  outline: none;
+  border-radius: 2px;
+}
+
+.footer__form__errors {
+  color: var(--tecnology-color);
+}
+
+.footer__form__cta {
+  display: block;
+  background: var(--tecnology-color);
+  width: 200px;
+  color: var(--background);
+  font-family: var(--font-family);
+  padding: 18px 0;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5);
+}
+
+.footer__form__cta:hover {
+  cursor: pointer;
+  background: var(--buttoms-color);
+  color: var(--white);
+}
+
+.footer__form__input__area {
+  resize: none;
+  height: 150px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.footer__social__copy {
+  color: var(--primary);
+}
+
+.footer__social__network {
+  font-size: 4rem;
+  color: var(--buttoms-color);
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-right: 2rem;
+  padding: 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.footer__social__network:hover {
+  transform: scale(1.2);
+  color: var(--white);
+  background-color: var(--buttoms-color);
+}
+
+@media (max-width: 768px) {
+  .footer__contact {
+    flex-direction: column;
+  }
+
+  .foooter__contact__text,
+  .foooter__contact__email {
+    text-align: center;
+  }
+
+  .footer__form {
+    width: 80%;
+  }
+
+  .footer__form__cta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__contact {
+    flex-direction: column;
+  }
+
+  .foooter__contact__text,
+  .foooter__contact__email {
+    text-align: center;
+  }
+
+  .footer__form {
+    width: 100%;
+  }
+
+  .footer__form__cta {
+    width: 100%;
+  }
+
+  .footer__social {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__social__buttons {
+    padding-top: 2rem;
+    margin-left: 10%;
+  }
+}

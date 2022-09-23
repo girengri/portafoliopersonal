@@ -1,7 +1,21 @@
+.bg1 {
+    background-image: url(../../public/icons/Monochromatic.svg);
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: top;
+    background-size: 20rem;
+}
+
+.bg2 {
+    background-image: url(../../public/icons/Monochromatic2.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: bottom;
+    background-size: 20rem;
+}
+
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    padding-top: 5rem;
 }
 
 .hero__titles {
@@ -20,10 +34,7 @@
 }
 
 .hero__paragraphs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .hero__paragraph {
@@ -36,6 +47,11 @@
     .hero__paragraph {
         padding: 0;
         line-height: normal;
+    }
+
+    .bg1,
+    .bg2 {
+        background-image: none;
     }
 }
 

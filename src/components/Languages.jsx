@@ -8,8 +8,8 @@ import { CardLanguages } from "./CardLanguages";
 
 export const Languages = () => {
   return (
-    <section className="languajes container">
-      <h2 className={styles.languages__subtitle}>Tecnologias</h2>
+    <section className={`${styles.languajes} container`}>
+      <h2 className={styles.languages__subtitle}>Tecnologías</h2>
 
       <div className={styles.languages__items}>
         <CardLanguages

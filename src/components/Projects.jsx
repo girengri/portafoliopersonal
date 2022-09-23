@@ -17,7 +17,7 @@ export const Projects = () => {
             <div>
                 <CardProject
                     title="Pokedex"
-                    description="Pokedex es una pagina donde puedes encontrar tus pokemones favoritos"
+                    description="Pokedex es una página donde puedes encontrar tus pokemones favoritos"
                     image="https://res.cloudinary.com/girengri/image/upload/v1663807590/portafolio%20personal/g0f6o9evkztwi78md1n6.png"
                     url="https://next-pokemon-static-girengri.vercel.app/"
                     github="https://github.com/girengri/next-pokemon-static"
@@ -34,7 +34,7 @@ export const Projects = () => {
 
                 <CardProject
                     title="Teslo shop"
-                    description="Teslo shop es el mejor ecommerce en donde encontraras articulos para vestir a tu familia"
+                    description="Teslo shop es el mejor e-commerce en donde encontraras artículos para vestir a tu familia"
                     image="https://res.cloudinary.com/girengri/image/upload/v1663825786/portafolio%20personal/bbvmf3gybe01jxbtl9rp.png"
                     url="https://tesloshoop.herokuapp.com/"
                     github="https://github.com/girengri/teslo-shop"

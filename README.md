@@ -3,7 +3,7 @@
 En este proyecto puede ver la creacion de un portafolio personal utilizando react y css modules
 
 
-Puede verlo aquí: <https://pruebatecnicaag-6f2f7.web.app/>
+Puede verlo aquí: <https://portafolio-giovany.vercel.app/>
 
 ## Requerimientos
 - Tener habilitado JavaScript en el Navegador
@@ -13,7 +13,7 @@ Puede verlo aquí: <https://pruebatecnicaag-6f2f7.web.app/>
 ## 🔥 Instalación
 
 ```shell
-git clone --branch desarrolloGiovany https://github.com/girengri/blockmaster.git
+git clone --branch desarrolloGiovany https://github.com/girengri/portafoliopersonal.git
 npm install
 npm start
 ```

@@ -1,60 +1,55 @@
 .cardProject {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 2fr);
-    margin-bottom: 5rem;
+    display: flex;
 }
 
 .cardProject__container {
-    grid-column: 1/-7;
-    grid-row: 1/-1;
-    padding: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardProject__img__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardProject__img {
-    width: 90%;
+    padding-top: 1rem;
+    width: 508px;
+    height: 256px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .cardProject__technologys {
+    padding-top: 1rem;
+    width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    justify-content: space-around;
     font-size: 40px;
-    color: var(--buttoms-color);
-    margin-top: 1rem;
+    /* color: var(--buttoms-color); */
+    flex-wrap: wrap;
 }
 
 .cardProject__texts {
-    grid-column: 7/-1;
-    grid-row: 1/-1;
-    position: relative;
-}
-
-.cardProject__flex {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-}
-
-.cardProject__description {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 0 5rem;
+    justify-content: center;
 }
 
 .cardProject__buttons {
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 1rem;
 }
 
 .cardProject__cta {
-    display: block;
-    margin-left: 1rem;
     padding: 1rem;
     border-radius: 20px;
     text-decoration: none;
@@ -64,44 +59,4 @@
 
 .cardProject__cta:hover {
     transform: scale(1.1);
-}
-
-@media (max-width: 820px) {
-    .cardProject__flex {
-        position: static;
-    }
-
-    .cardProject__description {
-        margin: 0.5rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .cardProject__container {
-        grid-column: 1/-1;
-        grid-row: 1/-4;
-    }
-
-    .cardProject__texts {
-        grid-column: 1/-1;
-        grid-row: 3/-1;
-    }
-
-    .cardProject__description {
-        margin: 0;
-    }
-
-    .cardProject__flex {
-        bottom: 5%;
-        left: 5%;
-    }
-
-    .cardProject__buttons {
-        flex-direction: column;
-    }
-
-    .cardProject__cta {
-        display: inline-block;
-        margin-bottom: 5%;
-    }
 }

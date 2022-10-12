@@ -1,9 +1,12 @@
 import {
+    SiCss3,
     SiDocker,
+    SiHtml5,
     SiMaterialui,
     SiMongodb,
     SiNextdotjs,
     SiReact,
+    SiTypescript,
 } from "react-icons/si";
 
 import styles from "../styles/projects.module.css";
@@ -11,23 +14,25 @@ import { CardProject } from "./CardProject";
 
 export const Projects = () => {
     return (
-        <section id="proyectos" className="container">
-            <h2 className={styles.projects__title}>Proyectos</h2>
+        <section id="proyectos">
+            <h2 className={`${styles.projects__title} container`}>Proyectos</h2>
 
-            <div>
+            <div className={styles.projects__container}>
                 <CardProject
                     title="Pokedex"
                     description="Pokedex es una página donde puedes encontrar tus pokemones favoritos"
                     image="https://res.cloudinary.com/girengri/image/upload/v1663807590/portafolio%20personal/g0f6o9evkztwi78md1n6.png"
                     url="https://next-pokemon-static-girengri.vercel.app/"
                     github="https://github.com/girengri/next-pokemon-static"
-                    color1="#afc1ed"
-                    color2="linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)"
+                    color1="#000"
+                    color2="#cd80ee"
+                    colorBoton2="#cd80ee"
                     tecnologias={[
+                        <SiHtml5 />,
                         <SiMaterialui />,
+                        <SiTypescript />,
                         <SiReact />,
                         <SiNextdotjs />,
-                        <SiMongodb />,
                         <SiDocker />,
                     ]}
                 />
@@ -38,17 +43,37 @@ export const Projects = () => {
                     image="https://res.cloudinary.com/girengri/image/upload/v1663825786/portafolio%20personal/bbvmf3gybe01jxbtl9rp.png"
                     url="https://tesloshoop.herokuapp.com/"
                     github="https://github.com/girengri/teslo-shop"
-                    color1="#bbb9bc"
-                    color2="linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%)"
+                    color1="#919191"
+                    color2="#fff"
+                    colorBoton1="#919191"
+                    colorTextos="#919191"
                     tecnologias={[
+                        <SiHtml5 />,
                         <SiMaterialui />,
+                        <SiTypescript />,
                         <SiReact />,
                         <SiNextdotjs />,
                         <SiMongodb />,
                         <SiDocker />,
                     ]}
+                    order="-1"
+                />
+
+                <CardProject
+                    title="Block Master"
+                    description="Con block master puede ver las ultimas peliculas del momento."
+                    image="https://res.cloudinary.com/girengri/image/upload/v1665543784/portafolio%20personal/kxwwihsp21hmw47li0yw.png"
+                    url="https://blockmastermovies.vercel.app/"
+                    github="https://github.com/girengri/blockmastermovies"
+                    color1="#0e3fa9"
+                    color2="#fed941"
+                    colorBoton1="#0e3fa9"
+                    colorTextos="#0e3fa9"
+                    colorBoton2="#fed941"
+                    tecnologias={[<SiHtml5 />, <SiCss3 />, <SiReact />, <SiNextdotjs />]}
                 />
             </div>
         </section>
     );
 };
+
